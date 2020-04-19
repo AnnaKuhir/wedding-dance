@@ -12,28 +12,83 @@ body {
   height: 100%;
 }
 
-body {
-  font-size: 16px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.65;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-  opacity: 1;
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 
-  .img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  .container {
+    max-width: 1368px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
-  .text-center {
-    text-align: center;
-  }
+  nav {
+    background-color: #fff;
+    padding: 30px 0 26px 0;
+    width: 100%;
 
-  // h1{
-  //   font-family: raleway-example;
-  // }
+    .logo {
+      color: #000;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      line-height: 1;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      float: right;
+      margin-right: -12px;
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1;
+        margin: 0 12px;
+
+        a {
+          color: #000;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 1;
+          padding: 0 0 2px 0;
+          font-family: Roboto;
+          font-weight: normal;
+          font-style: normal;
+        }
+
+        a.active,
+        a:hover {
+          border-bottom: 1px solid #000;
+        }
+
+
+    
+
+        
+      }
+
+    }
+
+
+    .button {
+      vertical-align: baseline;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      border: 2px solid #000;
+      box-sizing: border-box;
+      border-radius: 3px;
+      padding: 6px 33px;
+      background-color: #fff;
+    }
+    
+
+  }
 }
-
-
