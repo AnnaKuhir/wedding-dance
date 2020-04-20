@@ -77,11 +77,10 @@ body {
               transform: translateX(-50%);
             }
 
-            &:hover::after, &:focus::after {
+            &:hover::after,
+            &:focus::after {
               width: 100%;
             }
-
-          
           }
         }
       }
@@ -92,6 +91,7 @@ body {
         font-weight: 600;
         font-size: 16px;
         border: 2px solid #000;
+        color: #000;
         box-sizing: border-box;
         border-radius: 3px;
         padding: 6px 33px;
@@ -101,7 +101,8 @@ body {
         &:hover {
           color: #ff699f;
           border-color: #ff699f;
-          transition: 0.5s;
+          transition: .5s;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
       }
     }
@@ -109,14 +110,12 @@ body {
 
   .banner {
     display: flex;
+    justify-content: space-between;
 
     .banner-text {
-      width: 36%;
-      height: 100%;
-      background-color: #fff;
-      padding-right: 6%;
-      flex-direction: column;
-      justify-content: center;
+      max-width: 428px;
+      height: 653px;
+      padding: 73px 77px 80px 0;
 
       h1 {
         font-family: Montserrat;
@@ -124,7 +123,8 @@ body {
         font-weight: bold;
         font-size: 72px;
         color: #000;
-        margin: 73px 112px 16px 0;
+        margin-bottom: 16px;
+        line-height: 1;
       }
 
       span {
@@ -132,7 +132,6 @@ body {
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
-        // margin-bottom: 40px;
       }
 
       .info {
@@ -143,19 +142,35 @@ body {
         margin: 40px 0;
       }
 
-      .button-start {
-        margin-bottom: 80px;
+      .banner-button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        border: 2px solid #ff699f;
+        color: #ff699f;
+        border-radius: 3px;
+        padding: 11px 40px 10px;
+        background-color: #fff;
+
+        &:hover{
+          background-color: #ff699f;
+          color: #fff;
+          transition: .5s;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          
+        }
       }
     }
 
     .banner-img {
       width: 100%;
+      max-width: 836px;
+      height: 653px;
       background-image: url(../img/first-dance-i.jpg);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: right top;
       background-size: cover;
     }
   }
 }
-
-
