@@ -15,7 +15,112 @@
 </head>
 
 <body>
+
+
 	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a href="#" class="header__logo">Wedding Dance</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="#" class="header__link">Services</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Our Coaches</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Testimonials</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">FAQ</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Lesson Review</a>
+							</li>
+						</ul>
+						<button class="header__button" type="button"> Start </button>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+
+				<section class="banner">
+					<div class="banner__text">
+		
+						<h1 class="banner__title">
+							Wedding Dance Lessons
+						</h1>
+		
+						<span>New Jersey</span>
+		
+						<p class="banner__info">
+							The wedding dance is one of the most important dances in your life. You look perfect and the whole
+							audience is looking at you. Also, it becomes the favorite moment you like to play on videos and photos.
+							Feel the moment
+						</p>
+		
+						<button class="banner__button"> Let’s start</button>
+		
+					</div>
+		
+					<div class="banner__image"></div>
+				</section>
+
+			</div>
+		</main>
+
+		
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div class="wrapper">
 		<header>
 				<div class="header-menu">
 					<div class="logo">
@@ -78,7 +183,21 @@
 			</div>
 
 		</footer>
-	</div>
+	</div> -->
+
+	<!-- <script src="../app/libs/jquery/dist/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.header__burger').click(function(event){
+				$('.header__burger, .header__menu').toggleClass('active');
+				$('body').toggleClass('lock')
+
+			})
+		})
+	</script>
+
+
 
 </body>
 
