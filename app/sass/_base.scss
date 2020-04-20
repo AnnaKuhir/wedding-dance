@@ -12,96 +12,98 @@ body {
   height: 100%;
 }
 
-
-.wrapper{
+.wrapper {
   max-width: 1440px;
   background-color: #fff;
   margin: 0 auto;
 
-  .container{
+  .container {
     max-width: 1368px;
     padding: 0 30px;
     margin: 0 auto;
   }
 
-    .header-menu{
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 28px 0 27px 0;
+
+    .logo a {
+      color: #000;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      line-height: 1;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-menu {
       display: flex;
-      justify-content: space-between;
       align-items: baseline;
-      padding: 28px 0 27px 0;
 
-      .logo a{
-        color: #000;
-        font-size: 18px;
-        font-family: Montserrat, sans-serif;
-        line-height: 1;
-        font-weight: bold;        
-        text-decoration: none;
-        cursor: pointer;
-        
+      .nav-list {
+        vertical-align: baseline;
 
-      }
+        li {
+          display: inline-block;
+          vertical-align: top;
+          line-height: 1;
+          margin: 0 12px;
 
-        .nav-menu{
-          display: flex;
-          align-items: baseline;
-         
+          a {
+            display: inline-block;
+            vertical-align: top;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1;
+            font-family: Roboto;
+            font-weight: normal;
+            font-style: normal;
+            position: relative;
 
-
-          .nav-list{
-
-            vertical-align: baseline;
-
-            li{
-              display: inline-block;
-              vertical-align: top;
-              line-height: 1;
-              margin: 0 12px;
-
-              a{
-                color: #000;
-                text-decoration: none;
-                font-size: 14px;
-                line-height: 1;
-                padding: 0 0 2px 0;
-                font-family: Roboto;
-                font-weight: normal;
-                font-style: normal;
-                background-image: linear-gradient(currentColor, currentColor);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .5s;
-
-                &:hover{
-                  background-size: 100% 2px;
-                }
-              }
+            &::after {
+              background-color: #000;
+              display: block;
+              content: "";
+              height: 1px;
+              width: 0%;
+              left: 50%;
+              position: absolute;
+              transition: width 0.3s ease-in-out;
+              transform: translateX(-50%);
             }
 
-          }
-
-          .nav-button{
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            border: 2px solid #000;
-            box-sizing: border-box;
-            border-radius: 3px;
-            padding: 6px 33px;
-            background-color: #fff;
-            margin-left: 23px;
-
-            &:hover{
-              color:#FF699F;
-              border-color: #FF699F;
-              transition: .5s;
+            &:hover::after, &:focus::after {
+              width: 100%;
             }
           }
         }
-    }
+      }
 
+      .nav-button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 6px 33px;
+        background-color: #fff;
+        margin-left: 23px;
+
+        &:hover {
+          color: #ff699f;
+          border-color: #ff699f;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
 
   .banner {
     display: flex;
@@ -139,7 +141,7 @@ body {
         margin: 40px 0;
       }
 
-      .button-start{
+      .button-start {
         margin-bottom: 80px;
       }
     }
@@ -152,24 +154,4 @@ body {
       background-size: cover;
     }
   }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
