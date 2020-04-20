@@ -12,76 +12,96 @@ body {
   height: 100%;
 }
 
-.wrapper {
+
+.wrapper{
   max-width: 1440px;
+  background-color: #fff;
   margin: 0 auto;
 
-  .container {
+  .container{
     max-width: 1368px;
     padding: 0 30px;
     margin: 0 auto;
   }
 
-  nav {
-    background-color: #fff;
-    padding: 30px 0 26px 0;
-    width: 100%;
+    .header-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 28px 0 27px 0;
 
-    .logo {
-      color: #000;
-      font-size: 18px;
-      font-family: Montserrat, sans-serif;
-      line-height: 1;
-      font-weight: bold;
-
-      a {
-        text-decoration: none;
+      .logo a{
         color: #000;
-        cursor: pointer;
-      }
-    }
-
-    ul {
-      float: right;
-      margin-right: -12px;
-
-      li {
-        display: inline-block;
-        vertical-align: top;
+        font-size: 18px;
+        font-family: Montserrat, sans-serif;
         line-height: 1;
-        margin: 0 12px;
+        font-weight: bold;        
+        text-decoration: none;
+        cursor: pointer;
+        
 
-        a {
-          color: #000;
-          text-decoration: none;
-          font-size: 14px;
-          line-height: 1;
-          padding: 0 0 2px 0;
-          font-family: Roboto;
-          font-weight: normal;
-          font-style: normal;
-        }
-
-        a.active,
-        a:hover {
-          border-bottom: 1px solid #000;
-        }
       }
+
+        .nav-menu{
+          display: flex;
+          align-items: baseline;
+         
+
+
+          .nav-list{
+
+            vertical-align: baseline;
+
+            li{
+              display: inline-block;
+              vertical-align: top;
+              line-height: 1;
+              margin: 0 12px;
+
+              a{
+                color: #000;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1;
+                padding: 0 0 2px 0;
+                font-family: Roboto;
+                font-weight: normal;
+                font-style: normal;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
+
+                &:hover{
+                  background-size: 100% 2px;
+                }
+              }
+            }
+
+          }
+
+          .nav-button{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 6px 33px;
+            background-color: #fff;
+            margin-left: 23px;
+
+            &:hover{
+              color:#FF699F;
+              border-color: #FF699F;
+              transition: .5s;
+            }
+          }
+        }
     }
 
-    .button {
-      vertical-align: baseline;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      border: 2px solid #000;
-      box-sizing: border-box;
-      border-radius: 3px;
-      padding: 6px 33px;
-      background-color: #fff;
-    }
-  }
 
   .banner {
     display: flex;
@@ -132,4 +152,24 @@ body {
       background-size: cover;
     }
   }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
