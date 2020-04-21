@@ -1,5 +1,8 @@
-$(function() {
+// $(function() {
 
-	// Custom JS
+// 	// Custom JS
 
-});
+// });
+
+
+alert('Hello');

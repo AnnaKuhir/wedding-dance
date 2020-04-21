@@ -1,10 +1,6 @@
 @import "vars";
 
-// /*==========  Desktop First  ==========*/
 
-// /* Large Devices, Wide Screens */
-// @media only screen and (max-width : 1200px)
-// 	/**/
 
 @media screen and (max-width: 992px) {
   .wrapper {
@@ -69,8 +65,7 @@
   }
 
   .wrapper {
-
-    .container{
+    .container {
       padding: 0;
     }
     .header {
@@ -81,7 +76,7 @@
         width: 30px;
         height: 20px;
         position: relative;
-        z-index: 3;
+        z-index: 4;
 
         &::before,
         &::after {
@@ -131,14 +126,33 @@
       }
 
       .header__menu {
+        display: block;
         position: fixed;
         top: -100%;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #ccc;
-        padding: 80px 10px 20px 10px;
+        background-color: #fff;
+        background-image: url(../img/Menu.png);
+        background-size: contain;
+        background-position-x: right;
+        z-index: 3;
+        background-repeat: no-repeat;
+        border-bottom: 4px solid $pink;
+        // padding: 80px 10px 20px 10px;
+        padding: 40px 0 0 24px;
         transition: 0.5s;
+      }
+
+      .header__title {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #000;
+        line-height: 1;
+        margin-bottom: 48px;
       }
 
       .header__menu.active {
@@ -150,8 +164,22 @@
 
         li {
           display: block;
-          margin: 0 0 20px 0;
+          margin: 0 0 40px 0;
         }
+      }
+
+      .header__link {
+        font-size: 24px;
+        font-weight: 900;
+        font-family: Montserrat;
+        line-height: 1;
+      }
+
+      .header__button{
+        margin: 0;
+        padding: 11px 39px 10px 42px;
+        color: $pink;
+        border-color: $pink;
       }
     }
 
@@ -159,13 +187,13 @@
       padding: 0 0;
       flex-direction: column;
       .banner__text {
-        padding: 32px 59px 0 15px;
+        padding: 32px 15px 0;
         max-width: 100%;
         order: 1;
 
         .banner__title {
           font-size: 36px;
-          max-width: 175px;
+          text-align: center;
         }
 
         span {
@@ -174,11 +202,7 @@
 
         .banner__info {
           margin: 18px 0 24px 0;
-        }
-
-        .banner__button {
-          left: 0;
-          transform: translate(0px, 0px);
+          text-align: center;
         }
       }
       .banner__image {
@@ -190,49 +214,26 @@
   }
 }
 
+@media only screen and (max-width: 595px) {
+  .wrapper {
+    .banner {
+      .banner__text {
+        padding: 32px 59px 0 16px;
 
+        .banner__title {
+          max-width: 174px;
+          text-align: start;
+        }
 
-// /* Medium Devices, Desktops */
-// @media only screen and (max-width : 992px){
-//   .nav-list{
-//     a{
-//       font-size: 20px;
-//     }
-//   }
-// }
+        .banner__info {
+          text-align: start;
+        }
 
-/**/
-
-// /* Small Devices, Tablets */
-// @media only screen and (max-width : 768px)
-// 	/**/
-
-// /* Extra Small Devices, Phones */
-// @media only screen and (max-width : 480px)
-// 	/**/
-
-// /* Custom, iPhone Retina */
-// @media only screen and (max-width : 320px)
-// 	/**/
-
-// /*==========  Mobile First  ==========*/
-
-// /* Custom, iPhone Retina */
-// @media only screen and (min-width : 320px)
-// 	/**/
-
-// /* Extra Small Devices, Phones */
-// @media only screen and (min-width : 480px)
-// 	/**/
-
-// /* Small Devices, Tablets */
-// @media only screen and (min-width : 768px)
-// 	/**/
-
-// /* Medium Devices, Desktops */
-// @media only screen and (min-width : 992px)
-// 	/**/
-
-// /* Large Devices, Wide Screens */
-// @media only screen and (min-width : 1200px)
-// 	/**/
+        .banner__button {
+          left: 0;
+          transform: translate(0, 0);
+        }
+      }
+    }
+  }
+}
