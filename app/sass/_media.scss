@@ -1,7 +1,5 @@
 @import "vars";
 
-
-
 @media screen and (max-width: 992px) {
   .wrapper {
     .container {
@@ -175,7 +173,7 @@
         line-height: 1;
       }
 
-      .header__button{
+      .header__button {
         margin: 0;
         padding: 11px 39px 10px 42px;
         color: $pink;
