@@ -216,6 +216,7 @@ body {
   }
 
   .services {
+    margin-bottom: 100px;
     .services__title {
       font-family: Montserrat;
       font-style: normal;
@@ -243,31 +244,31 @@ body {
 
       .slick-initialized .slick-slide {
         display: block;
-    }
-      .slick-list{
+      }
+      .slick-list {
         overflow: hidden;
       }
 
-      .slick-track{
+      .slick-track {
         display: flex;
       }
 
-      .slick-dots{
+      .slick-dots {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        li{
+        li {
           list-style-type: none;
           margin: 0 2px;
         }
 
-        li.slick-active button{
+        li.slick-active button {
           background-color: $pink;
           border: 1px solid $pink;
         }
 
-        button{
+        button {
           font-size: 0;
           padding: 0;
           width: 6px;
@@ -276,12 +277,11 @@ body {
           border-radius: 50%;
           border: 1px solid rgba(0, 0, 0, 0.1);
         }
-
       }
 
       .services__card {
         width: 32.5%;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
       .services__image {
@@ -313,6 +313,57 @@ body {
         margin-bottom: 8px;
         display: block;
       }
+    }
+  }
+
+  .offers {
+    margin-bottom: 100px;
+
+    .offers__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .offers__description {
+      font-family: Montserrat-Normal;
+      max-width: 668px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 48px;
+    }
+
+    .offers__main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .offers__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 24%;
+      margin-bottom: 80px;
+    }
+
+    .offers__ico {
+      font-size: 100px;
+      color: $pink;
+      margin-bottom: 14px;
+    }
+
+    span {
+      font-family: Montserrat-Normal;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      line-height: 1.5rem;
+      max-width: 65%;
     }
   }
 }

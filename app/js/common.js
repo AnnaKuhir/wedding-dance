@@ -30,8 +30,6 @@ $(window).on("load resize orientationchange", function () {
                   speed: 500,
                   easing: 'ease',
                   arrows: false,
-                  // centerMode: true,
-                  // centerPadding: '30px',
                   dots: true,
                   infinite: false,
                   responsive: [
@@ -40,9 +38,7 @@ $(window).on("load resize orientationchange", function () {
                           settings: {
                               slidesToShow: 1,
                               slidesToScroll: 1,
-                              // centerMode: true,
                               adaptiveHeight: true,
-                              // centerPadding: '30px',
                               infinite: true
                           }
                       },
