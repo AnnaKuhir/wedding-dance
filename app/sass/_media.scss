@@ -19,7 +19,8 @@
     }
     .banner {
       .banner__text {
-        height: 550px;
+        height: auto;
+        padding-bottom: 0;
         .banner__title {
           font-size: 56px;
         }
@@ -57,15 +58,13 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   body.lock {
     overflow: hidden;
   }
 
   .wrapper {
-    .container {
-      padding: 0;
-    }
+
     .header {
       padding: 0 15px;
       .header__burger {
@@ -155,6 +154,7 @@
 
       .header__menu.active {
         right: 0;
+        overflow: scroll;
       }
 
       .header__list {
@@ -226,6 +226,18 @@
         height: 275px;
         order: 0;
       }
+    }
+
+    .services{
+
+      .services__slider{
+        display: block;
+      }
+
+      .services__card{
+        margin: 0 15px 0 0;
+      }
+
     }
   }
 }
