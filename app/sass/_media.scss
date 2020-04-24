@@ -55,6 +55,12 @@
         }
       }
     }
+
+    .offers{
+      .offers__item{
+        width: 33.333%;
+      }
+    }
   }
 }
 
@@ -66,12 +72,11 @@
   .wrapper {
 
     .header {
-      padding: 0 15px;
       .header__burger {
         display: block;
         position: relative;
-        width: 30px;
-        height: 20px;
+        width: 32px;
+        height: 12px;
         position: relative;
         z-index: 4;
 
@@ -101,7 +106,7 @@
           left: 0;
           width: 100%;
           height: 2px;
-          top: 9px;
+          top: 5px;
           transition: 0.5s;
         }
       }
@@ -109,12 +114,12 @@
       .header__burger.active {
         &::before {
           transform: rotate(45deg);
-          top: 9px;
+          top: 5px;
         }
 
         &::after {
           transform: rotate(-45deg);
-          bottom: 9px;
+          bottom: 5px;
         }
 
         span {
@@ -200,8 +205,9 @@
     }
 
     .banner {
-      padding: 0 0;
+      // padding: 0 0;
       flex-direction: column;
+      margin: 0 -15px 56px;
       .banner__text {
         padding: 32px 15px 0;
         max-width: 100%;
@@ -219,6 +225,7 @@
         .banner__info {
           margin: 18px 0 24px 0;
           text-align: center;
+          font-size: 14px;
         }
       }
       .banner__image {
@@ -230,6 +237,18 @@
 
     .services{
 
+      margin-bottom: 56px;
+
+      .services__title{
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      .services__description{
+        font-size: 13px;
+        margin-bottom: 23px;
+      }
+
       .services__slider{
         display: block;
       }
@@ -238,7 +257,45 @@
         margin: 0 15px 0 0;
       }
 
+      .services__subtitle{
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      span{
+        font-size: 13px;
+      }
+
     }
+
+    .offers{
+
+      margin-bottom: 56px;
+
+      .offers__title{
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      .offers__description{
+        font-size: 13px;
+        margin-bottom: 32px;
+      }
+
+      .offers__item{
+        width: 50%;
+        margin-bottom: 32px;
+      }
+
+      .offers__ico{
+        font-size: 70px;
+      }
+
+      span{
+        font-size: 13px;
+      }
+    }
+
   }
 }
 
