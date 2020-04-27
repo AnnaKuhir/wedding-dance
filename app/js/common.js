@@ -81,7 +81,7 @@ $(document).ready(function(){
     
   }).on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
     var i = (currentSlide ? currentSlide : 0) + 1;
-    $('.pagingInfo').text(i + '' + 'of' + '' + slick.slideCount);
+    $('.pagingInfo').text(i + ' ' + 'of' + ' ' + slick.slideCount);
 });
 })
 
