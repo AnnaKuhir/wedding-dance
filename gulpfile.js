@@ -74,6 +74,7 @@ gulp.task( 'iconfont', async () => {
 			fontName    : fontName,
 			formats     : [ 'svg', 'ttf', 'eot', 'woff', 'woff2' ],
 			reset   : true,
+			normalize: true,
 			fontHeight  : 1001
 		} ) )
 		// куда выбрасываем нашу папку с шрифтами
