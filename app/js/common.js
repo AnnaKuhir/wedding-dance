@@ -14,7 +14,7 @@ $(document).ready(function () {
 //   });
 // })
 
-$(window).on("load resize orientationchange", function () {
+$(window).on("load resize", function () {
   $(".services__slider").each(function () {
       var $slider = $(this);
       if ($(window).width() > 768) {
@@ -25,16 +25,22 @@ $(window).on("load resize orientationchange", function () {
           if (!$slider.hasClass("slick-initialized")) {
               $slider.slick({
                   initialSlide: 0,    
-                  slidesToShow: 1.2,
+                  slidesToShow: 2,
                   slidesToScroll: 1,
-                  speed: 500,
-                  easing: 'ease',
+                  speed: 1000,
+                  easing: 'easeInOutQuart',
                   arrows: false,
                   dots: true,
                   infinite: false,
                   responsive: [
                       {
-                          breakpoint: 450,
+                          breakpoint: 600,
+                          settings: {
+                              slidesToShow: 1.2,
+                          }
+                      },
+                      {
+                          breakpoint: 470,
                           settings: {
                               slidesToShow: 1,
                               slidesToScroll: 1,

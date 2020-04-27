@@ -318,7 +318,7 @@ body {
   }
 
   .offers {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 
     .offers__title {
       font-family: Montserrat;
@@ -360,7 +360,7 @@ body {
       margin-bottom: 14px;
     }
 
-    .offers__ico:hover{
+    .offers__ico:hover {
       color: rgb(154, 14, 173);
     }
 
@@ -372,6 +372,67 @@ body {
       text-align: center;
       line-height: 1.5rem;
       max-width: 70%;
+    }
+  }
+
+  .coaches {
+    margin-bottom: 100px;
+
+    .coaches__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.5rem;
+      margin-bottom: 24px;
+    }
+
+    .coaches__description {
+      font-family: Montserrat-Normal;
+      max-width: 668px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5rem;
+      margin-bottom: 48px;
+    }
+
+    .coaches__slider{
+
+      .coaches__card{
+        display: flex;
+        
+      }
+    }
+  }
+
+  .footer {
+    padding: 35px 0 36px 0;
+    background-color: #1F1F1F;
+    .footer__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer__logo {
+      color: #fff;
+      font-size: 18px;
+      font-family: Montserrat;
+      line-height: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .footer__copyright {
+      font-family: Montserrat-Normal;
+      color: #fff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 }

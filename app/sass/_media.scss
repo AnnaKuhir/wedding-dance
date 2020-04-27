@@ -219,13 +219,13 @@
         }
 
         span {
-          font-size: 14px;
+          font-size: 16px;
         }
 
         .banner__info {
           margin: 18px 0 24px 0;
           text-align: center;
-          font-size: 14px;
+          font-size: 16px;
         }
       }
       .banner__image {
@@ -245,7 +245,6 @@
       }
 
       .services__description{
-        font-size: 13px;
         margin-bottom: 23px;
       }
 
@@ -258,12 +257,7 @@
       }
 
       .services__subtitle{
-        font-size: 18px;
         margin-bottom: 16px;
-      }
-
-      span{
-        font-size: 13px;
       }
 
     }
@@ -278,7 +272,6 @@
       }
 
       .offers__description{
-        font-size: 13px;
         margin-bottom: 32px;
       }
 
@@ -289,10 +282,6 @@
 
       .offers__ico{
         font-size: 70px;
-      }
-
-      span{
-        font-size: 13px;
       }
     }
 
@@ -312,6 +301,10 @@
 
         .banner__info {
           text-align: start;
+          font-size: 14px;
+        }
+        span {
+          font-size: 16px;
         }
 
         .banner__button {
@@ -320,5 +313,33 @@
         }
       }
     }
+
+    .services{
+
+      .services__description{
+        font-size: 13px;
+      }
+
+      .services__subtitle{
+        font-size: 18px;
+      }
+
+      span{
+        font-size: 13px;
+      }
+    }
+
+    .offers{
+
+      .offers__description{
+        font-size: 13px;
+      }
+
+      span{
+        font-size: 13px;
+      }
+    }
+
+
   }
 }
