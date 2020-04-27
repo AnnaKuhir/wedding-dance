@@ -65,24 +65,51 @@
     .coaches{
       .coaches__slider{
         display: block;
+
+        .coaches__nextbutton{
+          display: block;
+          border: none;
+          background-color: #fff;
+
+          .coaches__nexticon{
+            font-size: 33px;
+            color: $pink;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+    
+          }
+  
+        }
       }
 
       .coaches__card{
         flex-direction: column;
+        position: relative;
       }
 
       .coaches__image{
         width: auto;
       }
 
+
       .coaches__button{
+        display: none;
+      }
+
+  
+
+      
+    
+
+
+
+      .coaches__arrow{
         display: none;
       }
     }
 
-    .pagingInfo{
-      display: none;
-    }
+
   }
 }
 

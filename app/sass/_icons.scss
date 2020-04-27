@@ -21,34 +21,46 @@
 }
 
 
-.icon-body:before {
+.icon-arrow:before {
 	content: "\E001";
 }
 
-.icon-cards:before {
+.icon-body:before {
 	content: "\E002";
 }
 
-.icon-coffe:before {
+.icon-cards:before {
 	content: "\E003";
 }
 
-.icon-rooms:before {
+.icon-coffe:before {
 	content: "\E004";
 }
 
-.icon-star:before {
+.icon-left:before {
 	content: "\E005";
 }
 
-.icon-team:before {
+.icon-right:before {
 	content: "\E006";
 }
 
-.icon-together:before {
+.icon-rooms:before {
 	content: "\E007";
 }
 
-.icon-twoboys:before {
+.icon-star:before {
 	content: "\E008";
+}
+
+.icon-team:before {
+	content: "\E009";
+}
+
+.icon-together:before {
+	content: "\E00A";
+}
+
+.icon-twoboys:before {
+	content: "\E00B";
 }
