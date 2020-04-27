@@ -397,18 +397,164 @@ body {
       margin-bottom: 48px;
     }
 
-    .coaches__slider{
+    .coaches__slider {
+      display: flex;
+      margin: 0 -8px;
+      min-width: 0;
+      position: relative;
 
-      .coaches__card{
+      .slick-track {
         display: flex;
-        
+      }
+
+      .slick-list {
+        overflow: hidden;
+      }
+
+      .slick-arrow {
+        position: absolute;
+        top: 100%;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+
+        &:active, &:focus{
+          outline: none;
+        }
+      }
+
+      .slick-arrow.slick-prev {
+        left: 45%;
+        background: url("../img/left.png") 0 0/ 100% no-repeat;
+      }
+
+      .slick-arrow.slick-next {
+        right: 45%;
+        background: url("../img/right.png") 0 0/ 100% no-repeat;
+      }
+
+      .slick-arrow.slick-disabled{
+        opacity: 0.2;
+      }
+
+      .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          list-style-type: none;
+          margin: 0 2px;
+        }
+
+        li.slick-active button {
+          background-color: $pink;
+          border: 1px solid $pink;
+        }
+
+        button {
+          font-size: 0;
+          padding: 0;
+          width: 6px;
+          height: 6px;
+          background-color: #fff;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .coaches__card {
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 0 8px;
+        display: flex;
+        min-width: 0;
+        width: 100%;
+      }
+
+      .coaches__image {
+        width: 45%;
+        object-fit: cover;
+      }
+
+      .coaches__info {
+        padding: 43px 30px;
+      }
+
+      .coaches__number {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+
+      .coaches__subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.5rem;
+        margin-bottom: 8px;
+      }
+
+      span {
+        font-family: Montserrat-Normal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 24px;
+        display: block;
+      }
+
+      .coaches__list {
+        margin-bottom: 88px;
+      }
+
+      .coaches__point {
+        font-family: Montserrat-Normal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        margin-bottom: 16px;
+
+        .coaches__point-alpha {
+          display: inline;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .coaches__button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        border: 2px solid $pink;
+        color: $pink;
+        border-radius: 3px;
+        padding: 11px 40px 10px;
+        background-color: #fff;
+
+        &:hover {
+          background-color: $pink;
+          color: #fff;
+          transition: 0.5s;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
       }
     }
   }
 
   .footer {
     padding: 35px 0 36px 0;
-    background-color: #1F1F1F;
+    background-color: #1f1f1f;
     .footer__inner {
       display: flex;
       flex-wrap: wrap;

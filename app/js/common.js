@@ -54,3 +54,27 @@ $(window).on("load resize", function () {
       }
   });
 });
+
+
+$(document).ready(function(){
+  $('.coaches__slider').slick({
+    slidesToShow: 2,
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 1.2
+            }
+         
+        }
+    ]
+    
+  }).on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $('.pagingInfo').text(i + '' + 'of' + '' + slick.slideCount);
+});
+})
+
