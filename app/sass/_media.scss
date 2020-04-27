@@ -61,6 +61,24 @@
         width: 33.333%;
       }
     }
+
+    .coaches{
+      .coaches__slider{
+        display: block;
+      }
+
+      .coaches__card{
+        flex-direction: column;
+      }
+
+      .coaches__image{
+        width: auto;
+      }
+
+      .coaches__button{
+        display: none;
+      }
+    }
   }
 }
 

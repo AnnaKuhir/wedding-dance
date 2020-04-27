@@ -377,6 +377,7 @@ body {
 
   .coaches {
     margin-bottom: 100px;
+    position: relative;
 
     .coaches__title {
       font-family: Montserrat;
@@ -419,7 +420,8 @@ body {
         height: 30px;
         border: none;
 
-        &:active, &:focus{
+        &:active,
+        &:focus {
           outline: none;
         }
       }
@@ -430,11 +432,11 @@ body {
       }
 
       .slick-arrow.slick-next {
-        right: 45%;
+        right: 44%;
         background: url("../img/right.png") 0 0/ 100% no-repeat;
       }
 
-      .slick-arrow.slick-disabled{
+      .slick-arrow.slick-disabled {
         opacity: 0.2;
       }
 
@@ -549,6 +551,18 @@ body {
             0 10px 10px rgba(0, 0, 0, 0.22);
         }
       }
+    }
+
+    .pagingInfo {
+      position: absolute;
+      top: 100%;
+      left: 49%;
+      padding: 5px 0;
+      font-family: Montserrat-Normal;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
     }
   }
 
