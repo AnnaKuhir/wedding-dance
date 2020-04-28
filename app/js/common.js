@@ -6,14 +6,6 @@ $(document).ready(function () {
     })
 });
 
-// $(document).ready(function(){
-//   $('.services__slider').slick({
-//     arrows: false,
-//     dots: true,
-//     slidesToShow: 1.5,
-//   });
-// })
-
 $(window).on("load resize", function () {
     $(".services__slider").each(function () {
         var $slider = $(this);
@@ -51,6 +43,9 @@ $(document).ready(function () {
     $('.coaches__slider').slick({
         slidesToShow: 2,
         infinite: false,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'easeInOutQuart',
         prevArrow: $('.arrow__prev'),
         nextArrow: $('.arrow__next'),
 
