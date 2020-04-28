@@ -39,15 +39,6 @@ $(window).on("load resize", function () {
                                 slidesToShow: 1.2,
                             }
                         },
-                        {
-                            breakpoint: 470,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                adaptiveHeight: true,
-                                infinite: true
-                            }
-                        },
                     ]
                 });
             }
