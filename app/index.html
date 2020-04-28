@@ -10,6 +10,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -53,7 +54,7 @@
 			<div class="container">
 				<section class="banner" id="banner">
 					<div class="banner__text">
-						<h1 class="banner__title">
+						<h1 class="banner__title wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">
 							Wedding Dance Lessons
 						</h1>
 						<span>New Jersey</span>
@@ -285,6 +286,10 @@
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="libs/wow/wow.min.js"></script>
+	<script>
+		new WOW().init();
+		</script>
 </body>
 
 </html>
