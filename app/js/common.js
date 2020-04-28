@@ -45,9 +45,13 @@ $(window).on("load resize", function () {
     });
 });
 
-
+var slider = $('.coaches__slider');
 $(document).ready(function () {
-    $('.coaches__slider').slick({
+    slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.arrow__info').text(i + ' ' + 'of' + ' ' + slick.slideCount);
+    });
+    slider.slick({
         slidesToShow: 2,
         infinite: false,
         slidesToScroll: 1,
@@ -84,9 +88,6 @@ $(document).ready(function () {
             }
         ]
 
-    }).on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $('.arrow__info').text(i + ' ' + 'of' + ' ' + slick.slideCount);
     });
 })
 
