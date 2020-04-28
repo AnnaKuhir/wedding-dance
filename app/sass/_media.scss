@@ -56,60 +56,48 @@
       }
     }
 
-    .offers{
-      .offers__item{
+    .offers {
+      .offers__item {
         width: 33.333%;
       }
     }
 
-    .coaches{
-      .coaches__slider{
+    .coaches {
+      .coaches__slider {
         display: block;
 
-        .coaches__nextbutton{
+        .coaches__nextbutton {
           display: block;
           border: none;
           background-color: #fff;
 
-          .coaches__nexticon{
+          .coaches__nexticon {
             font-size: 33px;
             color: $pink;
             position: absolute;
             bottom: 0;
             right: 0;
-    
+            margin: 0 8px 8px 0;
+
+            &:hover {
+              color: rgb(166, 30, 178);
+              transition: 0.5s;
+            }
           }
-  
         }
       }
 
-      .coaches__card{
-        flex-direction: column;
+      .coaches__card {
         position: relative;
       }
 
-      .coaches__image{
-        width: auto;
-      }
-
-
-      .coaches__button{
+      .coaches__button {
         display: none;
       }
-
-  
-
-      
-    
-
-
-
-      .coaches__arrow{
+      .coaches__arrow {
         display: none;
       }
     }
-
-
   }
 }
 
@@ -119,7 +107,6 @@
   }
 
   .wrapper {
-
     .header {
       .header__burger {
         display: block;
@@ -284,56 +271,80 @@
       }
     }
 
-    .services{
-
+    .services {
       margin-bottom: 56px;
 
-      .services__title{
+      .services__title {
         font-size: 24px;
         margin-bottom: 12px;
       }
 
-      .services__description{
+      .services__description {
         margin-bottom: 23px;
       }
 
-      .services__slider{
+      .services__slider {
         display: block;
       }
 
-      .services__card{
+      .services__card {
         margin: 0 15px 0 0;
       }
 
-      .services__subtitle{
+      .services__subtitle {
         margin-bottom: 16px;
       }
-
     }
 
-    .offers{
-
+    .offers {
       margin-bottom: 56px;
 
-      .offers__title{
+      .offers__title {
         font-size: 24px;
         margin-bottom: 12px;
       }
 
-      .offers__description{
+      .offers__description {
         margin-bottom: 32px;
       }
 
-      .offers__item{
+      .offers__item {
         width: 50%;
         margin-bottom: 32px;
       }
 
-      .offers__ico{
-        font-size: 70px;
+      .offers__ico {
+        font-size: 45px;
       }
     }
 
+    .coaches {
+      margin-bottom: 56px;
+
+      .coaches__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      .coaches__description {
+        margin-bottom: 32px;
+      }
+
+      .coaches__slider {
+        .coaches__card {
+          flex-direction: column;
+
+          .coaches__image {
+            width: 100%;
+            max-height: 300px;
+          }
+        }
+
+        .coaches__list {
+          margin-bottom: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -363,32 +374,62 @@
       }
     }
 
-    .services{
-
-      .services__description{
+    .services {
+      .services__description {
         font-size: 13px;
       }
 
-      .services__subtitle{
+      .services__subtitle {
         font-size: 18px;
       }
 
-      span{
+      span {
         font-size: 13px;
       }
     }
 
-    .offers{
-
-      .offers__description{
+    .offers {
+      .offers__description {
         font-size: 13px;
       }
 
-      span{
+      span {
         font-size: 13px;
       }
     }
 
+    .coaches {
+      .coaches__description {
+        font-size: 13px;
+      }
 
+      .coaches__slider {
+        .coaches__info {
+          padding: 16px 0 0 16px;
+        }
+
+        .coaches__number {
+          font-size: 12px;
+        }
+
+        .coaches__subtitle {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 13px;
+          margin-bottom: 16px;
+        }
+
+        .coaches__point {
+          font-size: 13px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .footer{
+      padding: 20px 0 18px 0;
+    }
   }
 }

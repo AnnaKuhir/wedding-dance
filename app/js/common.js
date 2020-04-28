@@ -67,16 +67,25 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
+                    slidesToShow: 1.7
+                }
+
+            },
+            {
+                breakpoint: 857,
+                settings: {
+                    arrows: false,
+                    dots: true,
                     slidesToShow: 1.5
                 }
 
             },
             {
-                breakpoint: 856,
+                breakpoint: 595,
                 settings: {
                     arrows: false,
                     dots: true,
-                    slidesToShow: 2
+                    slidesToShow: 1.2
                 }
 
             }

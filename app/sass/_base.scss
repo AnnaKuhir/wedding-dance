@@ -355,7 +355,7 @@ body {
     }
 
     .offers__ico {
-      font-size: 100px;
+      font-size: 60px;
       color: $pink;
       margin-bottom: 14px;
     }
@@ -538,6 +538,10 @@ body {
         border: none;
         background: #fff;
         margin-top: 9px;
+      }
+
+      .slick-disabled{
+        opacity: 0.2;
       }
 
       .arrow__icon {
