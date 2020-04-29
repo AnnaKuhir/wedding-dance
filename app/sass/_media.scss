@@ -34,7 +34,7 @@
         }
       }
       .banner__image {
-        height: 550px;
+        height: auto;
       }
     }
   }
@@ -49,7 +49,6 @@
     }
     .banner {
       .banner__text {
-        padding: 36px 57px 80px 0;
         .banner__title {
           font-size: 47px;
         }
@@ -67,17 +66,19 @@
         display: block;
 
         .coaches__nextbutton {
-          display: block;
+          display: inline-block;
+          vertical-align: top;
           border: none;
           background-color: #fff;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin: 0 16px 16px 0;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
           .coaches__nexticon {
             font-size: 33px;
             color: $pink;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 0 8px 8px 0;
 
             &:hover {
               color: rgb(166, 30, 178);
@@ -285,10 +286,11 @@
 
       .services__slider {
         display: block;
+        margin-right: -14px;
       }
 
       .services__card {
-        margin: 0 15px 0 0;
+        margin: 0 12px 0 0;
       }
 
       .services__subtitle {
@@ -428,7 +430,7 @@
       }
     }
 
-    .footer{
+    .footer {
       padding: 20px 0 18px 0;
     }
   }
