@@ -55,7 +55,6 @@ body {
     .header__logo {
       color: #000;
       font-size: 18px;
-      font-family: Montserrat;
       line-height: 1.5rem;
       font-weight: 700;
       text-decoration: none;
@@ -121,7 +120,6 @@ body {
     }
 
     .header__button {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -160,7 +158,6 @@ body {
       padding: 73px 77px 80px 0;
 
       .banner__title {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: 700;
         font-size: 72px;
@@ -170,7 +167,6 @@ body {
       }
 
       span {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -186,7 +182,6 @@ body {
       }
 
       .banner__button {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -220,7 +215,6 @@ body {
   .services {
     margin-bottom: 100px;
     .services__title {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -253,6 +247,7 @@ body {
 
       .slick-track {
         display: flex;
+        margin-bottom: 6px;
       }
 
       .slick-dots {
@@ -263,6 +258,10 @@ body {
         li {
           list-style-type: none;
           margin: 0 2px;
+        }
+
+        li button{
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
 
         li.slick-active button {
@@ -298,7 +297,6 @@ body {
       }
 
       .services__subtitle {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -322,7 +320,6 @@ body {
     margin-bottom: 20px;
 
     .offers__title {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -377,11 +374,10 @@ body {
   }
 
   .coaches {
-    margin-bottom: 100px;
+    margin-bottom: 94px;
     position: relative;
 
     .coaches__title {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -407,6 +403,7 @@ body {
 
       .slick-track {
         display: flex;
+        margin-bottom: 6px;
       }
 
       .slick-list {
@@ -421,6 +418,10 @@ body {
         li {
           list-style-type: none;
           margin: 0 2px;
+        }
+
+        li button{
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
 
         li.slick-active button {
@@ -460,7 +461,6 @@ body {
 
       .coaches__number {
         display: block;
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -469,7 +469,6 @@ body {
       }
 
       .coaches__subtitle {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -506,7 +505,6 @@ body {
       }
 
       .coaches__button {
-        font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -573,7 +571,6 @@ body {
     .footer__logo {
       color: #fff;
       font-size: 18px;
-      font-family: Montserrat;
       line-height: 1.5rem;
       font-weight: 700;
       text-decoration: none;
