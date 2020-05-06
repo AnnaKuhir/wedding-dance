@@ -252,7 +252,6 @@
 
         .banner__title {
           font-size: 36px;
-          text-align: center;
         }
 
         span {
@@ -261,8 +260,12 @@
 
         .banner__info {
           margin: 18px 0 24px 0;
-          text-align: center;
           font-size: 16px;
+        }
+
+        .banner__button {
+          left: 0;
+          transform: translate(0, 0);
         }
       }
       .banner__image {
@@ -348,6 +351,13 @@
         }
       }
     }
+
+    .footer{
+
+      .footer__copyright{
+        font-size: 13px;
+      }
+    }
   }
 }
 
@@ -369,11 +379,6 @@
         span {
           font-size: 16px;
         }
-
-        .banner__button {
-          left: 0;
-          transform: translate(0, 0);
-        }
       }
     }
 
@@ -382,12 +387,16 @@
         font-size: 13px;
       }
 
-      .services__subtitle {
-        font-size: 18px;
-      }
+      .services__slider{
 
-      span {
-        font-size: 13px;
+        .services__subtitle{
+          font-size: 18px;
+          margin-bottom: 16px;
+        }
+
+        .services__items{
+          font-size: 13px;
+        }
       }
     }
 
@@ -408,7 +417,7 @@
 
       .coaches__slider {
         .coaches__info {
-          padding: 16px 0 0 16px;
+          padding: 16px 55px 0 16px;
         }
 
         .coaches__number {
